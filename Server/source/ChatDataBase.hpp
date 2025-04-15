@@ -35,7 +35,7 @@ public:
         }
 
         // 连接数据库
-        mysql_ = mysql_real_connect(mysql_, "localhost", "root", "lkm20031030", "chat_database", 0, nullptr, 0);
+        mysql_ = mysql_real_connect(mysql_, "localhost", "root", "123456", "chat_database", 0, nullptr, 0);
         if (nullptr == mysql_)
         {
             lg(Fatal, "mysql_real_connect failed:%s", mysql_error(mysql_));

@@ -10,7 +10,7 @@
 #include <QJsonDocument>
 #include <string>
 
-#define SERVER_IP "YOUR_CLOUD_SERVER_IP"  // Replace with your cloud server's public IP
+#define SERVER_IP "82.157.249.198"  // Replace with your cloud server's public IP
 #define SERVER_PORT 8888
 
 Widget::Widget(QWidget *parent)
