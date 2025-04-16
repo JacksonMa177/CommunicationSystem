@@ -229,8 +229,9 @@ public:
 
         if (mysql_query(mysql_, sql) != 0)
         {
-            lg(Warning, "InsertUserTable::mysql_query failed");
+            lg(Warning, "InsertChatGroup::mysql_query failed: %s", mysql_error(mysql_));
             DataBaseDisConnect();
+            return; // 添加return，防止继续执行
         }
 
         lg(Info, "Insert groupname:%s into the database", v["groupname"].asString().c_str());
