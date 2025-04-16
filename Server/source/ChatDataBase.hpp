@@ -117,7 +117,7 @@ public:
                             grouplist varchar(8192)\
                             )charset utf8;";
 
-        if (mysql_query(mysql_, group.c_str()) != 0)
+        if (mysql_query(mysql_, user.c_str()) != 0)
         {
             lg(Fatal, "create chatuser table failed");
             return false;
